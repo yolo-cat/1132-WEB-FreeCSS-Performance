@@ -458,6 +458,9 @@
       </div>
       <!-- footer section end -->
       <!-- Javascript files-->
+      <!-- 🌐 提前連線到 CDN（可加快連線） -->
+      <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+      <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
       <script src="js/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
@@ -467,11 +470,23 @@
       <script src="js/custom.js"></script>
       <!-- javascript -->
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <!-- 🎨 fancyBox CSS（延遲載入） -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="print" onload="this.onload=null;this.media='all';">
+      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"></noscript>
+      <!-- ⚙️ fancyBox JS（延遲執行） -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" defer></script>
       <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
       <script src="../../assets/js/vendor/popper.min.js"></script>
       <script src="../../dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
    </body>
 </html>
