@@ -19,7 +19,7 @@ module.exports = {
     upload: {
       target: 'filesystem',
       outputDir: './lhci-report',
-      reportFilenamePattern: 'report-%%DATETIME%%.html',
+      reportFilenamePattern: 'index.html',
     },
   },
 };

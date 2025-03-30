@@ -39,7 +39,7 @@ jobs:
         cp -r ./images ./publish/ || true
         cp -r ./assets ./publish/ || true
         mkdir -p ./publish/lighthouse
-        cp -r ./lhci-report/* ./publish/lighthouse
+        cp -r ./lhci-report/index.html ./publish/lighthouse/index.html
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
