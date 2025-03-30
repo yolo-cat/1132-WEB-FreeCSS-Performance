@@ -28,7 +28,6 @@ jobs:
     - name: Run Lighthouse CI
       run: |
         lhci autorun
-        node generate-lhci-index.js
 
     - name: Prepare Combined Deploy Folder
       run: |
