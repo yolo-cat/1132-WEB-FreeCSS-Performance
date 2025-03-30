@@ -45,7 +45,7 @@ jobs:
         cp -r ./js ./publish/ || true
         cp -r ./images ./publish/ || true
         mkdir -p ./publish/lighthouse
-        cp -r ./lhci-report/index.html ./publish/lighthouse/index.html
+        cp -r ./lhci-report/index.report.html ./publish/lighthouse/index.html
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
