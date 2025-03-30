@@ -2,10 +2,10 @@
   {
     "url": "https://yolo-cat.github.io/1132-WEB-FreeCSS-Performance/",
     "isRepresentativeRun": false,
-    "htmlPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_47_18.html",
-    "jsonPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_47_18.html",
+    "htmlPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_59_31.html",
+    "jsonPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_59_31.html",
     "summary": {
-      "performance": 0.69,
+      "performance": 0.67,
       "accessibility": 0.8,
       "best-practices": 0.89,
       "seo": 0.82
@@ -14,10 +14,10 @@
   {
     "url": "https://yolo-cat.github.io/1132-WEB-FreeCSS-Performance/",
     "isRepresentativeRun": false,
-    "htmlPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_47_32.html",
-    "jsonPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_47_32.html",
+    "htmlPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_59_58.html",
+    "jsonPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_59_58.html",
     "summary": {
-      "performance": 0.91,
+      "performance": 0.9,
       "accessibility": 0.8,
       "best-practices": 0.89,
       "seo": 0.82
@@ -26,10 +26,10 @@
   {
     "url": "https://yolo-cat.github.io/1132-WEB-FreeCSS-Performance/",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_47_44.html",
-    "jsonPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_47_44.html",
+    "htmlPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_59_46.html",
+    "jsonPath": "/home/runner/work/1132-WEB-FreeCSS-Performance/1132-WEB-FreeCSS-Performance/lhci-report/report-2025_03_30_08_59_46.html",
     "summary": {
-      "performance": 0.91,
+      "performance": 0.9,
       "accessibility": 0.8,
       "best-practices": 0.89,
       "seo": 0.82
