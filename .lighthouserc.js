@@ -20,6 +20,7 @@ module.exports = {
       target: 'filesystem',
       outputDir: './lhci-report',
       reportFilenamePattern: 'index.html',
+      output: ['html']
     },
   },
 };
