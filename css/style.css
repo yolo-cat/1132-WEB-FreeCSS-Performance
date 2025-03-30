@@ -234,7 +234,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/webp/banner-bg.webp);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -833,7 +833,7 @@ button {
 .newsletter_section {
     width: 100%;
     float: left;
-    background-image: url(../images/newsletter-bg.png);
+    background-image: url(../images/webp/newsletter-bg.webp);
     height: auto;
     padding-bottom: 90px;
 }
