@@ -1,0 +1,33 @@
+# === Node.js ===
+node_modules/
+package-lock.json.old
+
+# === Build Output ===
+dist/
+build/
+
+# === Logs ===
+*.log
+npm-debug.log*
+
+# === Environment Variables ===
+.env
+.env.*.local
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === LHCI Report Cache (for Lighthouse CI) ===
+.lhci/
+lhci-report/
+
+# === IDE Config Files ===
+.idea/
+*.iml
+
+# === GitHub Pages Build Cache (可選) ===
+.cache/
+
+# ✅ package-lock.json is intentionally NOT ignored
+# Keep it for dependency locking across environments
