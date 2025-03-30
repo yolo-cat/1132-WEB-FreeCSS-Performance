@@ -1,0 +1,46 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install Dependencies
+      run: |
+        npm ci
+
+    - name: Install Lighthouse CI
+      run: |
+        npm install -g @lhci/cli
+
+    - name: Run Lighthouse CI
+      run: |
+        lhci autorun
+
+    - name: Upload LHCI Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: lighthouse-report
+        path: ./lhci-report
+
+    - name: Deploy Lighthouse Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./lhci-report
+        destination_dir: lighthouse
+        publish_branch: gh-pages
+
