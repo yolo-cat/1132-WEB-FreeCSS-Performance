@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <!-- 提前連線到 Google Fonts -->
+      <!-- 提早連線 -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="dns-prefetch" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com">
       <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+      <!-- 非同步字型載入（推薦使用新版 API） -->
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"></noscript>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- mobile metas -->
@@ -458,7 +461,7 @@
       <script src="js/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="js/plugin.js" defer></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
