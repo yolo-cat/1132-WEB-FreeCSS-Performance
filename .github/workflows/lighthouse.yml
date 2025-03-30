@@ -27,13 +27,15 @@ jobs:
     - name: Install Lighthouse CLI
       run: npm install -g lighthouse
 
-    - name: Generate Lighthouse HTML Report (as index.html)
+    - name: Generate Lighthouse HTML Report (HTML+JSON)
       run: |
         mkdir -p lhci-report
         npx lighthouse https://yolo-cat.github.io/1132-WEB-FreeCSS-Performance/ \
           --output html \
-          --output-path=./lhci-report/index.html \
-          --chrome-flags="--headless"
+          --output json \
+          --output-path=./lhci-report/index \
+          --chrome-flags="--headless" \
+          --locale=zh-TW
 
     - name: Prepare Combined Deploy Folder
       run: |
