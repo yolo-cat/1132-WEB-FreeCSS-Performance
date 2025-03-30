@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <!-- 提前連線到 Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- mobile metas -->
@@ -28,55 +33,44 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!-- 預載 Logo 圖片 -->
-      <link rel="preload" as="image" href="images/webp/logo.webp">
    </head>
    <body>
-<!-- header section start -->
-<div class="header_section">
-  <div class="container">
-    <nav class="navbar navbar-dark bg-dark">
-      <!-- logo 優化：提早載入 -->
-      <a class="logo" href="index.html">
-        <img
-          src="images/webp/logo.webp"
-          alt="logo"
-          loading="eager"
-          fetchpriority="high"
-          width="147"
-          height="36"
-        >
-      </a>
-
-      <!-- 搜尋與圖示區塊 -->
-      <div class="search_section">
-        <ul>
-          <li><a href="#">Log In</a></li>
-          <li><a href="#"><img src="images/webp/shopping-bag.webp" alt="shopping-bag" loading="lazy" width="23" height="29"></a></li>
-          <li><a href="#"><img src="images/webp/search-icon.webp" alt="search-icon" loading="lazy" width="26" height="26"></a></li>
-        </ul>
-      </div>
-
-      <!-- 漢堡選單按鈕 -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- 導覽連結 -->
-      <div class="collapse navbar-collapse" id="navbarsExample01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="clients.html">Client</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</div>
-<!-- header section end -->
-
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-dark bg-dark">
+               <a class="logo" href="index.html"><img src="images/webp/logo.webp" alt="logo" loading="lazy" width="98" height="24"></a>
+               <div class="search_section">
+                  <ul>
+                     <li><a href="#">Log In</a></li>
+                     <li><a href="#"><img src="images/webp/shopping-bag.webp" alt="shopping-bag" loading="lazy" width="15" height="19"></a></li>
+                     <li><a href="#"><img src="images/webp/search-icon.webp" alt="search-icon" loading="lazy" width="17" height="17"></a></li>
+                  </ul>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarsExample01">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="category.html">Category</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Client</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
          <!--banner section start -->
          <div class="banner_section layout_padding">
             <div id="my_slider" class="carousel slide" data-ride="carousel">
@@ -93,7 +87,13 @@
                            </div>
                            <div class="col-md-6">
                               <div><img
-                                         src="images/webp/img-1.webp"
+                                         src="images/webp/img-1-640.webp"
+                                         srcset="
+                                           images/webp/img-1-320.webp 320w,
+                                           images/webp/img-1-480.webp 480w,
+                                           images/webp/img-1-640.webp 640w,
+                                           images/webp/img-1.webp 800w
+                                         "
                                          sizes="(max-width: 768px) 100vw, 50vw"
                                          class="image_1"
                                          alt="Discount product banner"
@@ -101,11 +101,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="button_main"><button class="all_text">All</button>
-                           <label>
-                              <input type="text" class="Enter_text" placeholder="Enter keywords" name="">
-                           </label>
-                           <button class="search_text">Search</button></div>
+                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter keywords" name=""><button class="search_text">Search</button></div>
                      </div>
                   </div>
                   <div class="carousel-item">
@@ -120,7 +116,13 @@
                            </div>
                            <div class="col-md-6">
                               <div><img
-                                        src="images/webp/img-1.webp"
+                                        src="images/webp/img-1-640.webp"
+                                         srcset="
+                                           images/webp/img-1-320.webp 320w,
+                                           images/webp/img-1-480.webp 480w,
+                                           images/webp/img-1-640.webp 640w,
+                                           images/webp/img-1.webp 800w
+                                         "
                                          sizes="(max-width: 768px) 100vw, 50vw"
                                          class="image_1"
                                          alt="Discount product banner"
@@ -128,11 +130,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="button_main"><button class="all_text">All</button>
-                           <label>
-                              <input type="text" class="Enter_text" placeholder="Enter keywords" name="">
-                           </label>
-                           <button class="search_text">Search</button></div>
+                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter keywords" name=""><button class="search_text">Search</button></div>
                      </div>
                   </div>
                   <div class="carousel-item">
@@ -147,7 +145,13 @@
                            </div>
                            <div class="col-md-6">
                               <div><img
-                                        src="images/webp/img-1.webp"
+                                        src="images/webp/img-1-640.webp"
+                                         srcset="
+                                           images/webp/img-1-320.webp 320w,
+                                           images/webp/img-1-480.webp 480w,
+                                           images/webp/img-1-640.webp 640w,
+                                           images/webp/img-1.webp 800w
+                                         "
                                          sizes="(max-width: 768px) 100vw, 50vw"
                                          class="image_1"
                                          alt="Discount product banner"
@@ -155,25 +159,23 @@
                               </div>
                            </div>
                         </div>
-                        <div class="button_main"><button class="all_text">All</button>
-                           <label>
-                              <input type="text" class="Enter_text" placeholder="Enter keywords" name="">
-                           </label>
-                           <button class="search_text">Search</button></div>
+                        <div class="button_main"><button class="all_text">All</button><input type="text" class="Enter_text" placeholder="Enter keywords" name=""><button class="search_text">Search</button></div>
                      </div>
                   </div>
                </div>
                <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-               <i class=""><img src="images/webp/left-icon.webp" alt="Carousel left arrow" loading="lazy" width="24" height="9"></i>
+               <i class=""><img src="images/webp/left-icon.webp" alt="Carousel left arrow" loading="lazy" width="16" height="9"></i>
                </a>
                <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-               <i class=""><img src="images/webp/right-icon.webp" alt="Carousel right arrow" loading="lazy" width="24" height="9"></i>
+               <i class=""><img src="images/webp/right-icon.webp" alt="Carousel right arrow" loading="lazy" width="16" height="9"></i>
                </a>
             </div>
          </div>
-
-
-<div class="container">
+         <!--banner section end -->
+      </div>
+      <!--header section end -->
+      <!--category section start -->
+      <div class="container">
          <div class="category_section">
             <div class="row">
                <div class="col-lg-2 col-sm-12">
@@ -219,7 +221,13 @@
                   <div class="beds_section active">
                      <h1 class="bed_text">Up to 50% off | Beds</h1>
                      <div><img
-                             src="images/webp/img-2.webp"
+                             src="images/webp/img-2-320.webp"
+                             srcset="
+                               images/webp/img-2-240.webp 240w,
+                               images/webp/img-2-320.webp 320w,
+                               images/webp/img-2-480.webp 480w,
+                               images/webp/img-2.webp 600w
+                             "
                              sizes="(max-width: 768px) 100vw, 33vw"
                              class="image_2"
                              alt="Bed furniture promotion"
@@ -232,7 +240,13 @@
                   <div class="beds_section">
                      <h1 class="bed_text">organized in style</h1>
                      <div><img
-                             src="images/webp/img-3.webp"
+                             src="images/webp/img-3-320.webp"
+                             srcset="
+                               images/webp/img-3-240.webp 240w,
+                               images/webp/img-3-320.webp 320w,
+                               images/webp/img-3-480.webp 480w,
+                               images/webp/img-3.webp 600w
+                             "
                              sizes="(max-width: 768px) 100vw, 33vw"
                              class="image_2"
                              alt="Home organization tools"
@@ -244,7 +258,13 @@
                   <div class="beds_section">
                      <h1 class="bed_text">Refurbished mixer</h1>
                      <div><img
-                             src="images/webp/img-4.webp"
+                             src="images/webp/img-4-320.webp"
+                             srcset="
+                               images/webp/img-4-240.webp 240w,
+                               images/webp/img-4-320.webp 320w,
+                               images/webp/img-4-480.webp 480w,
+                               images/webp/img-4.webp 600w
+                             "
                              sizes="(max-width: 768px) 100vw, 33vw"
                              class="image_2"
                              alt="Refurbished kitchen mixer"
@@ -264,7 +284,13 @@
                   <div class="beauty_box">
                      <h1 class="bed_text">Beauty products</h1>
                      <div><img
-                             src="images/webp/img-5.webp"
+                             src="images/webp/img-5-320.webp"
+                             srcset="
+                               images/webp/img-5-240.webp 240w,
+                               images/webp/img-5-320.webp 320w,
+                               images/webp/img-5-480.webp 480w,
+                               images/webp/img-5.webp 600w
+                             "
                              sizes="(max-width: 768px) 100vw, 33vw"
                              class="image_3"
                              alt="Beauty product set"
@@ -277,7 +303,13 @@
                   <div class="beauty_box_1">
                      <h1 class="bed_text_1">Explore trending electronics</h1>
                      <div><img
-                             src="images/webp/img-6.webp"
+                             src="images/webp/img-6-640.webp"
+                             srcset="
+                               images/webp/img-6-320.webp 320w,
+                               images/webp/img-6-480.webp 480w,
+                               images/webp/img-6-640.webp 640w,
+                               images/webp/img-6.webp 800w
+                             "
                              sizes="(max-width: 768px) 100vw, 50vw"
                              class="image_3"
                              alt="Trending electronics"
@@ -361,10 +393,10 @@
                </div>
             </div>
             <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class=""><img src="images/webp/left-icon.webp" alt="Carousel left arrow" loading="lazy" width="24" height="9"></i>
+            <i class=""><img src="images/webp/left-icon.webp" alt="Carousel left arrow" loading="lazy" width="16" height="9"></i>
             </a>
             <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class=""><img src="images/webp/right-icon.webp" alt="Carousel right arrow" loading="lazy" width="24" height="9"></i>
+            <i class=""><img src="images/webp/right-icon.webp" alt="Carousel right arrow" loading="lazy" width="16" height="9"></i>
             </a>
          </div>
       </div>
