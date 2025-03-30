@@ -33,7 +33,11 @@ jobs:
     - name: Prepare Combined Deploy Folder
       run: |
         mkdir publish
-        cp -r ./docs/* ./publish/             # ✅ 假設你的主站在 ./docs
+        cp -r ./*.html ./publish/
+        cp -r ./css ./publish/ || true
+        cp -r ./js ./publish/ || true
+        cp -r ./images ./publish/ || true
+        cp -r ./assets ./publish/ || true
         mkdir -p ./publish/lighthouse
         cp -r ./lhci-report/* ./publish/lighthouse
 
