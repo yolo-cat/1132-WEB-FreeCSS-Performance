@@ -12,7 +12,7 @@
     "lighthouse": "lighthouse https://yolo-cat.github.io/1132-WEB-FreeCSS-Performance/ --output html --output-path ./lh-report.html --chrome-flags='--headless'",
     "lhci:collect": "lhci collect",
     "lhci:assert": "lhci assert",
-    "lhci:autorun": "lhci autorun"
+    "lhci": "lhci autorun && node generate-lhci-index.js"
   },
   "private": true
 }
